@@ -1,0 +1,9 @@
+name: lCoins
+version: ${project.version}
+main: dev.danteh.coins.Coins
+authors: ["lDqnteh", "LuneDev"]
+commands:
+  shop:
+    description: [shop commands]
+  coins:
+    description: [coins command]

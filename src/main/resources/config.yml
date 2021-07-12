@@ -1,0 +1,74 @@
+# LICENSE
+LICENSE: "XXXXX-XXXXX-XXXXX-XXXXX"
+
+# PRODUCT MESSAGES CONFIGURATION
+NO-MONEY: "&cYou need %COINS% coins to purchase this product!"
+NO-PURCHASED: "&cCanceled %PRODUCT% &aProduct!"
+PURCHASED: "&aSuccessfully purchased %PRODUCT% &aProduct!"
+
+# MENUS CONFIGURATION
+FILL_MENU:
+  ENABLE: false
+  DISPLAYNAME: " "
+  MATERIAL: "STAINED_GLASS_PANE"
+  DATA: 7
+
+# SHOP MENU CONFIGURATION
+SHOP-MENU:
+  TITLE: "Shop"
+  SIZE: 3
+  CATEGORY:
+    RANKS:
+      ICON:
+        GLOW: true
+        DISPLAYNAME: "&6&lRanks"
+        DESCRIPTION:
+          - "&7&m----------------------"
+          - "&eDefault rank description."
+          - "&7&m----------------------"
+        MATERIAL: "NETHER_STAR"
+        DATA: 0
+        SLOT: 13
+      SUB-MENU: true
+
+# CATEGORY MENU CONFIGURATION
+CATEGORY-MENU:
+  TITLE: "%CATEGORY% Category"
+  SIZE: 3
+  CATEGORY:
+    RANKS:
+      SILVER:
+        ICON:
+          GLOW: true
+          DISPLAYNAME: "&7Silver Rank"
+          DESCRIPTION:
+            - "&7&m----------------------"
+            - "&eCost&7: &f%COINS% coins."
+            - "&7&m----------------------"
+          MATERIAL: "COAL"
+          DATA: 0
+          SLOT: 10
+        COINS: 1000
+        COMMANDS:
+          - "say %PLAYER% purchased silver rank."
+
+# CONFIRM MENU CONFIGURATION
+CONFIRM-MENU:
+  TITLE: "Confirm Purchase"
+  SIZE: 3
+  CONFIRM:
+    ICON:
+      DISPLAYNAME: "&aConfirm"
+      DESCRIPTION: {}
+  CANCEL:
+    ICON:
+      DISPLAYNAME: "&cCancel"
+      DESCRIPTION: {}
+  INFO:
+    ICON:
+      DISPLAYNAME: "&6Product Information"
+      DESCRIPTION:
+        - "&7&m----------------------"
+        - "&eProduct&7: &f%PRODUCT%"
+        - "&eCoins&7: &f%COINS%"
+        - "&7&m----------------------"
